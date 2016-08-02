@@ -1,2 +1,7 @@
-<h1>Posts#index</h1>
+<h1> Blog Posts</h1>
 <p>Find me in app/views/posts/index.html.erb</p>
+<% @posts.each do |p| %>
+<h1><%= p.title %></h1>
+<div><%= p.body  %></div><br>
+<%= link_to "Read More", p %>
+<%end%>
